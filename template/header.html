@@ -1,0 +1,62 @@
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-light" id="navvbar">
+        <div class="container">
+            <a class="navbar-brand" href="/narcotrack.html"><img src="images/logo.png" class="w-50  mb-1" alt="" ></a>
+            <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars" style="color:#d9d9d9; font-size:27px;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/centers">CENTERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quiz.html">QUIZ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">ABOUT</a>
+                    </li>
+                    
+                    
+                            {% if user.is_authenticated %}
+                            <div class="profile-dropdown" class="ms-5">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png"  alt="Profile Photo" class="profile-photo">
+                                <div class="dropdown-content">
+                                    <a href="/show_profile">Profile</a>
+                                    <a href="/profile">Edit Profile</a>
+                                    <a href="/patient_data">Patient Data</a>
+                                    <a href="/create_center">Create Center</a>
+                                    <a href="/logout">Log out
+                                    </div>
+                            {% else %}
+                            <li class="nav-item ms-4">
+                            <a href="/login"><button class="button">Log in</button></a>
+                            </li>
+                            {% endif %}
+                            </a>
+
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- message Start -->
+{% comment %} 
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 mb-3" role="alert">
+<strong>{{ message }}</strong>
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- message End  --> {% endcomment %}
+
+{% block content %}
+{% endblock %}

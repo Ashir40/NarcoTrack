@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Font Awesome 5 CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="{% static 'login_style.css' %}">
+</head>
+<body>
+    <div class="login-box">
+        <p>Login</p>
+        <form action="/login" method="POST">
+          {% csrf_token %}
+          <div class="user-box">
+            <input required="" name="log-uname" type="text">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input required="" name="log-pass" type="password">
+            <label>Password</label>
+          </div>
+          <button type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </button>
+          {% if messages %}
+      {% for message in messages %}
+    <p class="text-danger text-center pt-2 pb-2" style="font-size:14px; font-weight:bold;">{{ message }}</p>
+    {% endfor %}
+    {% endif %}
+        </form>
+        <p>Don't have an account? <a href="/register" class="a2" style="text-decoration:underline;">Sign up! </a></p>
+      </div>
+</body>

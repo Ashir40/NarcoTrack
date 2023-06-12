@@ -1,0 +1,424 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   
+}
+
+.nav-link{
+   color: rgb(0, 177, 182);
+   font-weight: bold;
+   margin-left: 20px;
+   font-size: 20px;
+}
+.home-bg{
+   background-color: rgb(0, 177, 182);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+ }
+
+ html{
+    font-size: 62.5%;
+ }
+
+ .main-div{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(206, 92%, 92%);
+ }
+ .inner-div{
+    width: 40vw;
+    /* min-height: 40vh; */
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+    background-color: hsl(0, 0%, 100%);
+ }
+
+ .inner-div h2{
+   font-size: 3.5rem;
+   font-weight: 400;
+   margin: 1rem 0 4rem 0;
+ }
+
+ .inner-div li{
+   font-size: 2rem;
+   margin-top: 1.5rem;
+   list-style: none;
+ }
+
+input{
+   cursor: pointer;
+}
+
+#submit, .btn{
+   padding: 1rem 3rem;
+   outline: none;
+   font-size: 2rem;
+   font-weight: 400;
+   display: block;
+   margin: auto;
+   border: none;
+   text-transform: uppercase;
+   color: #fff;
+   background-color: #74b9ff;
+   margin-top: 4rem;
+   border-radius: 5px;
+   box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+   cursor: pointer;
+}
+
+#submit:hover{
+   background-color: #0984e3;
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.4) inset;
+}
+
+#showscore{
+   background-color: #e1e9ec;
+   border-radius: 4px;
+   margin-top: -4rem;
+   padding: 2rem 5rem;
+   padding-bottom: 2.5rem;
+   box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+}
+
+#showscore h3{
+   font-size: 2rem;
+   font-weight: 600;
+   text-align: center;
+}
+
+#showscore .btn{
+   margin-top: 1rem;
+   background-color: #55efc4;
+   color: #2d3436;
+}
+
+#showscore .btn:hover{
+   background-color: #00b894;
+   color: #fff;
+}
+
+.scorearea{
+   display: none;
+}
+
+
+
+.profile-dropdown {
+   position: relative;
+   display: inline-block;
+   margin-top: -3px;
+ }
+ 
+ .profile-photo {
+   width: 58px; /* Adjust the size as needed */
+   height: 58px; /* Adjust the size as needed */
+   border-radius: 50%;
+   cursor: pointer;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   top: 60px; /* Adjust the distance from the profile photo */
+   right: 0;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   padding: 12px;
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   display: block;
+   padding: 8px 16px;
+   text-decoration: none;
+   color: #333;
+ }
+ 
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+ 
+ .profile-dropdown:hover .dropdown-content {
+   display: block;
+ }
+ 
+ 
+ /* CSS code for tablets */
+ @media only screen and (max-width: 768px) {
+   .container {
+       width: 720px;
+   }
+ }
+ 
+ /* CSS code for mobile devices */
+ @media only screen and (max-width: 480px) {
+   .container {
+       width: 100%;
+       padding: 0 10px;
+   }
+ }
+ .site-footer
+ {
+     margin-top: 40px;
+   background-color:rgb(0, 177, 182);
+   padding:45px 20px;
+   font-size:15px;
+   line-height:24px;
+   color:black;
+ }
+ .site-footer hr
+ {
+   border-top-color:#bbb;
+   opacity:0.5
+ }
+ .site-footer hr.small
+ {
+   margin:20px 0
+ }
+ .site-footer h6
+ {
+   color:#fff;
+   font-size:16px;
+   text-transform:uppercase;
+   margin-top:5px;
+   letter-spacing:2px
+ }
+ .site-footer a
+ {
+   color:black;
+ }
+ .site-footer a:hover
+ {
+   color:#3366cc;
+   text-decoration:none;
+ }
+ .footer-links
+ {
+   padding-left:0;
+   list-style:none
+ }
+ .footer-links li
+ {
+   display:block
+ }
+ .footer-links a
+ {
+   color:#737373
+ }
+ .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+ {
+   color:#3366cc;
+   text-decoration:none;
+ }
+ .footer-links.inline li
+ {
+   display:inline-block
+ }
+ .site-footer .social-icons
+ {
+   text-align:right
+ }
+ .site-footer .social-icons a
+ {
+   width:40px;
+   height:40px;
+   line-height:40px;
+   margin-left:6px;
+   margin-right:0;
+   border-radius:100%;
+   background-color:#33353d
+ }
+ .copyright-text
+ {
+   margin:0
+ }
+ @media (max-width:991px)
+ {
+   .site-footer [class^=col-]
+   {
+     margin-bottom:30px
+   }
+ }
+ /* @media (max-width:767px)
+ {
+   .site-footer
+   {
+     padding-bottom:0
+   }
+   .site-footer .copyright-text,.site-footer .social-icons
+   {
+     text-align:center
+   }
+ }
+ .social-icons
+ {
+   padding-left:0;
+   margin-bottom:0;
+   list-style:none
+ }
+ .social-icons li
+ {
+   display:inline-block;
+   margin-bottom:4px
+ }
+ .social-icons li.title
+ {
+   margin-right:15px;
+   text-transform:uppercase;
+   color:#96a2b2;
+   font-weight:700;
+   font-size:13px
+ }
+ .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+ {
+   color:#fff;
+   background-color:#29aafe
+ }
+ .social-icons.size-sm a
+ {
+   line-height:34px;
+   height:34px;
+   width:34px;
+   font-size:14px
+ }
+ .social-icons a.facebook:hover
+ {
+   background-color:#3b5998
+ }
+  */
+ @media (max-width:767px)
+ {
+   .social-icons li.title
+   {
+     display:block;
+     margin-right:0;
+     font-weight:600
+   }
+ }
+ .social-buttons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #F2F2F2;
+     width: 450px;
+     margin: auto;
+     box-shadow: 0px 0px 15px #00000027;
+     padding: 15px 10px;
+     border-radius: 5em;
+   }
+   .social-button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     margin: 0 20px;
+     background-color: #fff;
+     box-shadow: 0px 0px 4px #00000027;
+     transition: 0.3s;
+   }
+   .social-button:hover {
+     background-color: #F2F2F2;
+     box-shadow: 0px 0px 6px 3px #00000027;
+   }
+   .social-buttons svg {
+     transition: 0.3s;
+     height: 20px;
+   }
+   .facebook {
+     background-color: #3B5998;
+   }
+   .facebook svg {
+     fill: #F2F2F2;
+   }
+   .facebook:hover svg {
+     fill: #3B5998;
+   }
+   .github {
+     background-color: #333;
+   }
+   .github svg {
+     width: 25px;
+     height: 25px;
+     fill: #F2F2F2;
+   }
+   .github:hover svg {
+     fill: #333;
+   }
+   .linkedin {
+     background-color: #0077B5;
+   }
+   .linkedin svg {
+     fill: #F2F2F2;
+   }
+   .linkedin:hover svg {
+     fill: #0077B5;
+   }
+   .instagram {
+     background-color: #C13584;
+   }
+   .instagram svg {
+     fill: #F2F2F2;
+   }
+   .instagram:hover svg {
+     fill: #C13584;
+   }
+ .about
+ {
+     display: inline-block;
+ }
+ .about p
+ {
+     padding-right: 80px;
+ }
+ .about h6
+ {
+     font-size: 24px;
+     font-weight: bold;
+     padding-bottom: 10px;
+ 
+ }
+ .icon
+ {
+     display: inline-block;
+ }
+ .fade-in {
+     animation: fade-in 0.5s ease-in-out forwards;
+   }
+   
+   .fade-out {
+     animation: fade-out 0.5s ease-in-out forwards;
+   }
+   
+   @keyframes fade-in {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
+   
+   @keyframes fade-out {
+     0% {
+       opacity: 1;
+     }
+     100% {
+       opacity: 0;
+     }
+   }
+ 
